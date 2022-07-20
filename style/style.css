@@ -161,6 +161,7 @@ h1 {
 }
 
 /* Blog Container styles */
+
 .blog-container {
     display: grid;
     grid-template-columns: repeat(3, 1.8fr);
@@ -176,7 +177,7 @@ h1 {
 }
 
 .blog-image img {
-    width: 280px;
+    width: 180px;
     height: 160px;
 }
 
@@ -268,6 +269,100 @@ nav > ul > li > a {
     text-align: center;
     font-size: 16px;
 }
+
+
+
+/* Upcoming match website */
+.blog-2 {
+    width: 280px;
+    height: 300px;
+    box-shadow: 0 0 0 0.4px rgb(29, 8, 8);
+    border-radius: 25px;
+}
+
+.blog-images {
+    display: flex;
+    width: 270px;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 16px;
+}
+
+.blog-images img {
+    width: 90px;
+    height: 80px;
+}
+
+#blog-image {
+    margin: 10px 20px;
+    font-size: 20px;
+    color: #1D1D1D;
+}
+
+.blog-infos {
+    width: 270px;
+    text-align: center;
+}
+
+.blog-infos h3 {
+    font-size: 20px;
+    color: #0c0202;
+}
+
+.blog-infos p {
+    font-size: 16px;
+    color: #0c0202;
+}
+
+
+
+
+/* All groups css */
+
+.groups {
+    background-color: #ffffff;
+    width: 450px;
+    height: 420px;
+    border: 2px solid black;
+    border-radius: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: black;
+    position: relative;
+}
+
+.groups h3 {
+    font-size: 20px;
+    color: #3d0505;
+    text-align: center;
+}
+
+.grp-names {
+    width: 410px;
+    height: 100px;
+    margin-left: 9%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.grp-name-img {
+    width: 160px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Query */
 @media only screen and (max-width: 688px) {
@@ -403,6 +498,47 @@ nav > ul > li > a {
 
 /* tablet */
 @media only screen and (min-width:689px) and (max-width:992px) {
+    .banner-container {
+        width: 700px;
+        height: 640x;
+        margin: 40px 5%;
+        display: flex;
+        background-color: black;
+        color: white;
+        border-radius: 25px;
+        margin-bottom: 40px;
+    }
+
+    .banner-heading {
+        margin-top: 80px;
+        width: 30%;
+        height: 440px;
+        margin-left: 80px;
+        margin-right: 40px;
+        padding-bottom: 10px;
+    }
+
+    .banner-heading h1 {
+        font-size: 44px;
+    }
+
+    .banner-heading p {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .banner-image {
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 60%;
+        height: 613px;
+        background-image: url(../assets/Banner_Image.png);
+        background-size: cover;
+        background-position: center;
+    }
+
     .Middle-container {
         width: 580px;
         height: 640x;
@@ -417,6 +553,7 @@ nav > ul > li > a {
         display: flex;
         flex-direction: row;
         align-items: center;
+        align-content: center;
         height: 100px;
         border-radius: 12px;
         margin-left: 0;
@@ -432,12 +569,12 @@ nav > ul > li > a {
     }
 
     .btn-1 a {
+        text-align: center;
         text-decoration: none;
         color: black;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 700;
         display: inline-block;
-        text-align: center;
     }
 
     .blog-container {
